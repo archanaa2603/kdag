@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Header</title>
+  <style>
+    /* Reset default margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header styling */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 15px 30px;
+    }
+
+    /* Logo styling */
+    .logo img {
+      height: 50px; /* Adjust logo size */
+    }
+
+    /* Navigation styling */
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px; /* Space between links */
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4; /* Highlight color on hover */
+    }
+
+    /* Make it responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        background: #444;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        padding: 15px;
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo on the left -->
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+
+    <!-- Navigation links on the right -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
